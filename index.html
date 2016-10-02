@@ -18,17 +18,22 @@ body {font-family: "Lato", sans-serif}
     <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </li>
   <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large" style="color:white" >Home</a></li>
-    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">News<i class="fa fa-caret-down"></i></a>
+ 
+  <li class="w3-hide-small w3-dropdown-hover">
+  <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">News<i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-white w3-card-4">
       <a href="#">Announcements</a>
       <a href="#">Weekly Newsletter</a>
-      <a href="#">Calendar</a>
-      <a href="#">Charms</a>  
-    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">Fund Raising<i class="fa fa-caret-down"></i></a>
+      <a href="#">Calendar</a> 
+      <a href="#">Charms</a> 
+   
+  <li class="w3-hide-small w3-dropdown-hover">
+  <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">Fund Raising<i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-white w3-card-4">
       <a href="#">Sponsors</a>
       <a href="#">U.S. Flag Program</a>
-      <a href="#">Christmas Tree Pickup Program</a>
+      <a href="#">Christmas Tree Pick up Program</a>
+  
   <li class="w3-hide-small w3-dropdown-hover">
   <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">Members<i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-white w3-card-4">
@@ -36,8 +41,9 @@ body {font-family: "Lato", sans-serif}
       <a href="#">Students</a>
       <a href="#">Boosters</a>
       <a href="#">Parents</a>
-      <a href="#">Volunteers</a>
+      <a href="#">Volunteers</a>	  
   <li class="w3-hide-small"><a href="#" class=" w3-padding-large" style="color:white">Contact</a></li>
+  
   <li class="w3-hide-small w3-dropdown-hover">
     <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">About<i class="fa fa-caret-down"></i></a>
     <div class="w3-dropdown-content w3-white w3-card-4">
@@ -46,7 +52,6 @@ body {font-family: "Lato", sans-serif}
   	  <a href="#">Stars</a>
       <a href="#">Forms</a>
       <a href="#">Timeline</a>
-	  
     </div>
   </li>
   <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
@@ -106,11 +111,9 @@ body {font-family: "Lato", sans-serif}
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -314,7 +317,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -326,7 +328,6 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 4000);
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
     var x = document.getElementById("navDemo");
@@ -336,7 +337,6 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
@@ -348,5 +348,4 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
 
