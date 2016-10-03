@@ -47,7 +47,7 @@ body {font-family: "Lato", sans-serif}
   <li class="w3-hide-small w3-dropdown-hover">
     <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">About<i class="fa fa-caret-down"></i></a>
     <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#">Mission</a>
+      <a href="#mission">Mission</a>
       <a href="#">Ensembles</a>
   	  <a href="#">Stars</a>
       <a href="#">Forms</a>
@@ -91,6 +91,47 @@ body {font-family: "Lato", sans-serif}
 
 
 <!-- Navbar on small screens -->
+
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+ <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:200px;">
+  <div class="w3-accordion">
+    <button onclick="myFunc('NewsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">News &nbsp;<i class="fa fa-caret-down"></i></button>
+     <div id="NewsSide" class="w3-accordion-content w3-card-2">
+	  <a class="w3-text-black" href="javascript:void(0)">Announcements</a>
+	  <a class="w3-text-black" href="javascript:void(0)">Weekly Newsletter</a>
+      <a class="w3-text-black" href="javascript:void(0)">Calendar</a>
+	  <a class="w3-text-black" href="javascript:void(0)">Charms</a>
+	 </div>
+    <button onclick="myFunc('FundsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">Fund Raising &nbsp;<i class="fa fa-caret-down"></i></button>
+     <div id="FundsSide" class="w3-accordion-content w3-card-2">
+	  <a class="w3-text-black" href="javascript:void(0)">Sponsors</a>
+	  <a class="w3-text-black" href="javascript:void(0)">U.S. Flag Program</a>
+      <a class="w3-text-black" href="javascript:void(0)">Christmas Tree Pick up Program</a>
+	 </div>
+    <button onclick="myFunc('MembersSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">Members &nbsp;<i class="fa fa-caret-down"></i></button>
+     <div id="FundsSide" class="w3-accordion-content w3-card-2">
+	  <a class="w3-text-black" href="javascript:void(0)">Directors</a>
+	  <a class="w3-text-black" href="javascript:void(0)">Students</a>
+      <a class="w3-text-black" href="javascript:void(0)">Boosters</a>
+      <a class="w3-text-black" href="javascript:void(0)">Parents</a>
+      <a class="w3-text-black" href="javascript:void(0)">Volunteers</a>
+	 </div>
+	<a href="#">Contact</a> 
+    <button onclick="myFunc('AboutSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">About &nbsp;<i class="fa fa-caret-down"></i></button>
+     <div id="AboutSide" class="w3-accordion-content w3-card-2">
+	  <a class="w3-text-black" href="#mission">Mission</a>
+	  <a class="w3-text-black" href="javascript:void(0)">Ensembles</a>
+      <a class="w3-text-black" href="javascript:void(0)">Stars</a>
+      <a class="w3-text-black" href="javascript:void(0)">Forms</a>
+      <a class="w3-text-black" href="javascript:void(0)">Timeline</a>	  
+	 </div>	 
+
+  </div>
+
+ </nav>
+</div>
+<!--
+
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <ul class="w3-navbar w3-left-align" style="background-color:#990000" >
     <li><a class="w3-padding-large" href="#" style="color:white">News</a></li>
@@ -102,6 +143,7 @@ body {font-family: "Lato", sans-serif}
 	<li><a class="w3-padding-large" href="#" style="color:white">About</a></li>	
   </ul>
 </div>
+-->
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1800px;margin-top:46px">
@@ -125,6 +167,48 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 </script>
+
+
+<script>
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+
+function myFunc(id) {
+    var x = document.getElementById(id);
+    if (x.classList) { 
+        x.classList.toggle("w3-show");
+    } else {
+    // Fallback for IE9 and earlier
+    if (x.className.indexOf("w3-show") == -1) 
+        x.className = x.className + " w3-show";
+    else 
+        x.className = x.className.replace("w3-show", "");
+    }
+}
+
+</script>
+
+
 
 <!--    
   <!-- Automatic Slideshow Images -->
@@ -154,15 +238,21 @@ function showDivs(n) {
   </div>
 -->
   <!-- The Band Section -->
+  <a name="mission">
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide">THE RAVENWOOD BAND</h2>
     <p class="w3-opacity"><i>We love music</i></p>
     <p class="w3-justify">
-	Mission
+	<div class="w3-container">
+		<h2 class="w3-text-shadow">Mission</h2>
+    </div>
 <br>
 Our mission is to help our band to build strong relationships through unity, commitment and discipline resulting in strong leadership, excellence and friendship throughout the student's lifetime.
 <br>
-Philosophy
+	<div class="w3-container">
+		<h2 class="w3-text-shadow">Philosophy</h2>
+    </div>
+
 <br>
 Rehearsals will be conducted with a positive attitude in a pleasant atmosphere. Students will be focused, energetic and relaxed in order to achieve the outstanding results desired. The director and staff will be organized and efficient through careful planning and goal setting. These qualities will make the experience enjoyable and productive for student and staff alike.
 <br>
