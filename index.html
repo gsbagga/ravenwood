@@ -37,7 +37,7 @@ body {font-family: "Lato", sans-serif}
   <li class="w3-hide-small w3-dropdown-hover">
   <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">Members<i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#">Directors</a>
+      <a href="#directors">Directors</a>
       <a href="#">Students</a>
       <a href="#">Boosters</a>
       <a href="#">Parents</a>
@@ -95,35 +95,35 @@ body {font-family: "Lato", sans-serif}
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
  <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:200px;">
   <div class="w3-accordion">
-    <button onclick="myFunc('NewsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">News &nbsp;<i class="fa fa-caret-down"></i></button>
+    <button onclick="myFunc('NewsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">News &nbsp;<i class="fa fa-caret-down"></i></button>
      <div id="NewsSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="javascript:void(0)">Announcements</a>
-	  <a class="w3-text-black" href="javascript:void(0)">Weekly Newsletter</a>
-      <a class="w3-text-black" href="javascript:void(0)">Calendar</a>
-	  <a class="w3-text-black" href="javascript:void(0)">Charms</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Announcements</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Weekly Newsletter</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Calendar</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Charms</a>
 	 </div>
-    <button onclick="myFunc('FundsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">Fund Raising &nbsp;<i class="fa fa-caret-down"></i></button>
+    <button onclick="myFunc('FundsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">Fund Raising &nbsp;<i class="fa fa-caret-down"></i></button>
      <div id="FundsSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="javascript:void(0)">Sponsors</a>
-	  <a class="w3-text-black" href="javascript:void(0)">U.S. Flag Program</a>
-      <a class="w3-text-black" href="javascript:void(0)">Christmas Tree Pick up Program</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Sponsors</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">U.S. Flag Program</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Christmas Tree Pick up Program</a>
 	 </div>
-    <button onclick="myFunc('MembersSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">Members &nbsp;<i class="fa fa-caret-down"></i></button>
-     <div id="FundsSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="javascript:void(0)">Directors</a>
-	  <a class="w3-text-black" href="javascript:void(0)">Students</a>
-      <a class="w3-text-black" href="javascript:void(0)">Boosters</a>
-      <a class="w3-text-black" href="javascript:void(0)">Parents</a>
-      <a class="w3-text-black" href="javascript:void(0)">Volunteers</a>
+    <button onclick="myFunc('MembersSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">Members &nbsp;<i class="fa fa-caret-down"></i></button>
+     <div id="MembersSide" class="w3-accordion-content w3-card-2">
+	  <a class="w3-text-black" href="#directors" onclick="myFunction()">Directors</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Students</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Boosters</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Parents</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Volunteers</a>
 	 </div>
-	<a href="#">Contact</a> 
-    <button onclick="myFunc('AboutSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-red w3-hover-grey">About &nbsp;<i class="fa fa-caret-down"></i></button>
+	<a href="#" onclick="myFunction()">Contact</a> 
+    <button onclick="myFunc('AboutSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">About &nbsp;<i class="fa fa-caret-down"></i></button>
      <div id="AboutSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="#mission">Mission</a>
-	  <a class="w3-text-black" href="javascript:void(0)">Ensembles</a>
-      <a class="w3-text-black" href="javascript:void(0)">Stars</a>
-      <a class="w3-text-black" href="javascript:void(0)">Forms</a>
-      <a class="w3-text-black" href="javascript:void(0)">Timeline</a>	  
+	  <a class="w3-text-black" href="#mission" onclick="myFunction()">Mission</a>
+	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Ensembles</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Stars</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Forms</a>
+      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Timeline</a>	  
 	 </div>	 
 
   </div>
@@ -252,11 +252,32 @@ Our mission is to help our band to build strong relationships through unity, com
 	<div class="w3-container">
 		<h2 class="w3-text-shadow">Philosophy</h2>
     </div>
-
+<p class="w3-justify">
 <br>
 Rehearsals will be conducted with a positive attitude in a pleasant atmosphere. Students will be focused, energetic and relaxed in order to achieve the outstanding results desired. The director and staff will be organized and efficient through careful planning and goal setting. These qualities will make the experience enjoyable and productive for student and staff alike.
 <br>
+ <a name="directors">
+<br>
+<br>
+	<div class="w3-container">
+		<h2 class="w3-text-shadow">Directors</h2>
+    </div>
+<br>  
+	<div class="w3-container">
+		<h3 class="w3-text-shadow">Director Of Bands - Mark Kinzer</h3>
+    </div>
+<br>
+	Mark has been working with bands and their kids for over 20 years and is considered one of the premeir music educators and education management professionals in the United States. Under Marks watchful eye and guidance, the Ravenwood band program has grown and flourished to a nationally recognized band program. The program has more than doubled since Mark’s arrival to over 170 students while performance accomplisments keep pace.
+<br>
+	<div class="w3-container">
+		<h3 class="w3-text-shadow">Assistant Director of Bands - Brant Poindexter</h3>
+    </div>
 
+Brant Poindexter is in his first year as the Assistant Director of Bands at Ravenwood High School in Brentwood, TN. Brant Poindexter graduated from Tennessee Technological University in 2015 with a degree in Instrumental Music Education. He has taught several marching bands in the mid-state, as well as performed with the TTU Jazz Ensembles, TTU Wind Ensembles, and a community big band in the upper Cumberland. Along with playing in several jazz groups, Brant was the tenor saxophonist in the XY Quartet, participating in the MTNA Chamber Competition, at the state and regional level, and the Fischoff Chamber Ensemble Competition. Some of his highlights include playing with artists like Gary Foster, Scott Mayo, Vince DiMartino, and Duffy Jackson. Brant is also a member of MTSBOA, NAfME, TMEA, and TBA.
+<br>
+<br>
+
+  
 </p>
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
