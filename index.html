@@ -5,152 +5,31 @@
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<script src="/w3/w3data.js"></script>
+
+
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-<ul class="w3-navbar w3-card-2 w3-left-align" style="background-color:#990000" >
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large" style="color:white" >Home</a></li>
- 
-  <li class="w3-hide-small w3-dropdown-hover">
-  <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">News<i class="fa fa-caret-down"></i></a>
-      <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#">Announcements</a>
-      <a href="#">Weekly Newsletter</a>
-      <a href="#">Calendar</a> 
-      <a href="#">Charms</a> 
-   
-  <li class="w3-hide-small w3-dropdown-hover">
-  <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">Fund Raising<i class="fa fa-caret-down"></i></a>
-      <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#">Sponsors</a>
-      <a href="#">U.S. Flag Program</a>
-      <a href="#">Christmas Tree Pick up Program</a>
-  
-  <li class="w3-hide-small w3-dropdown-hover">
-  <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">Members<i class="fa fa-caret-down"></i></a>
-      <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#directors">Directors</a>
-      <a href="#">Students</a>
-      <a href="#">Boosters</a>
-      <a href="#">Parents</a>
-      <a href="#">Volunteers</a>	  
-  <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large" style="color:white">Contact</a></li>
-  
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More" style="color:white">About<i class="fa fa-caret-down"></i></a>
-    <div class="w3-dropdown-content w3-white w3-card-4">
-      <a href="#mission">Mission</a>
-      <a href="#">Ensembles</a>
-  	  <a href="#">Stars</a>
-      <a href="#">Forms</a>
-      <a href="#">Timeline</a>
-    </div>
-  </li>
-  <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
-</ul>
-</div>
-
-<br>
-<br>
+	<div w3-include-html="/nav.html"></div>
 
 
-<div class="w3-display-container" style="height:110px; background-color:#990000"  >
-  <div class="w3-display-topmiddle">
-  <img src="img/ravenwoodband_logo.png">
-  </div>
-</div>
-<!--
-  <div class="w3-display-topmiddle"><h1 class="w3-jumbo">Ravenwood High School Band</h1></div>
-  <div class="w3-display-topright">Top Right</div>
-  <div class="w3-display-bottomleft">Bottom Left</div>
-  <div class="w3-display-bottomright">Bottom Right</div>
-  <div class="w3-display-middle">Middle</div>
-  <div class="w3-display-bottommiddle">Bottom Mid</div>
--->
+	<div class="w3-content" style="max-width:800px;position:relative">
+		<img class="mySlides" src="img/g6EjvxR745x435.jpg" style="width:100%">
+		<img class="mySlides" src="img/AJOmqjJ745x435.jpg" style="width:100%">
+		<img class="mySlides" src="img/8rrXwgS745x435.jpg" style="width:100%">
+		<img class="mySlides" src="img/GeeCpom745x435.jpg" style="width:100%">
 
+		<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><</a>
+		<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">></a>
+	</div>
 
-<br>
-
-<div class="w3-content" style="max-width:800px;position:relative">
-  <img class="mySlides" src="img/g6EjvxR745x435.jpg" style="width:100%">
-  <img class="mySlides" src="img/AJOmqjJ745x435.jpg" style="width:100%">
-  <img class="mySlides" src="img/8rrXwgS745x435.jpg" style="width:100%">
-  <img class="mySlides" src="img/GeeCpom745x435.jpg" style="width:100%">
-
-  <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><</a>
-  <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">></a>
-</div>
-
-
-<!-- Navbar on small screens -->
-
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
- <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:200px;">
-  <div class="w3-accordion">
-    <button onclick="myFunc('NewsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">News &nbsp;<i class="fa fa-caret-down"></i></button>
-     <div id="NewsSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Announcements</a>
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Weekly Newsletter</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Calendar</a>
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Charms</a>
-	 </div>
-    <button onclick="myFunc('FundsSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">Fund Raising &nbsp;<i class="fa fa-caret-down"></i></button>
-     <div id="FundsSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Sponsors</a>
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">U.S. Flag Program</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Christmas Tree Pick up Program</a>
-	 </div>
-    <button onclick="myFunc('MembersSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">Members &nbsp;<i class="fa fa-caret-down"></i></button>
-     <div id="MembersSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="#directors" onclick="myFunction()">Directors</a>
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Students</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Boosters</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Parents</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Volunteers</a>
-	 </div>
-	<a href="#contact" onclick="myFunction()">Contact</a> 
-    <button onclick="myFunc('AboutSide')" class="w3-padding-16 w3-btn-block w3-left-align w3-hover-grey" style="background-color:#990000">About &nbsp;<i class="fa fa-caret-down"></i></button>
-     <div id="AboutSide" class="w3-accordion-content w3-card-2">
-	  <a class="w3-text-black" href="#mission" onclick="myFunction()">Mission</a>
-	  <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Ensembles</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Stars</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Forms</a>
-      <a class="w3-text-black" href="javascript:void(0)" onclick="myFunction()">Timeline</a>	  
-	 </div>	 
-
-  </div>
-
- </nav>
-</div>
-<!--
-
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <ul class="w3-navbar w3-left-align" style="background-color:#990000" >
-    <li><a class="w3-padding-large" href="#" style="color:white">News</a></li>
-    <li><a class="w3-padding-large" href="#" style="color:white">Forms</a></li>
-    <li><a class="w3-padding-large" href="#" style="color:white">Fund Raising</a></li>
-    <li><a class="w3-padding-large" href="#" style="color:white">Members</a></li>
-	<li><a class="w3-padding-large" href="#" style="color:white">Members</a></li>
-	<li><a class="w3-padding-large" href="#" style="color:white">Contact</a></li>	
-	<li><a class="w3-padding-large" href="#" style="color:white">About</a></li>	
-  </ul>
-</div>
--->
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:1800px;margin-top:46px">
+<div class="w3-content" style="max-width:1800px;margin-top:46px"></div>
 
 
 
 <script>
+w3IncludeHTML();
 var slideIndex = 1;
 showDivs(slideIndex);
 function plusDivs(n) {
@@ -210,33 +89,7 @@ function myFunc(id) {
 
 
 
-<!--    
-  <!-- Automatic Slideshow Images -->
-  <!--
-  <div class="mySlides w3-display-container">
-  -->
-  <!--  <img src="img_la.jpg" style="width:100%"> 
-    <img src="https://i.imgur.com/g6EjvxR.jpg" style="width:100%"> 
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>
-    </div>
-  </div>
-  <div class="mySlides w3-display-container">
-    <img src="https://i.imgur.com/AJOmqjJ.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>
-    </div>
-  </div>
-  <div class="mySlides w3-display-container">
-    <img src="https://i.imgur.com/8rrXwgS.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>
-    </div>
-  </div>
--->
+
   <!-- The Band Section -->
   <a name="mission">
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
@@ -391,34 +244,6 @@ Brant Poindexter is in his first year as the Assistant Director of Bands at Rave
 		<a href="mailto:boosters@ravenwoodband.com" title="Email Band Boosters">Ravenwood Band Boosters</a>
 		<br>
 	</h4>
-		
-
-    
-<!--	 	
-	<div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Brentwood TN, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: 615-xxx-xxx<br>
-		
-
-      </div>
-	  
- 
-	  
-      <div class="w3-col m6">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Comment">
-        <button class="w3-btn w3-section w3-right">SEND</button>
-      </div>
-    </div>
--->	
   </div>
 
 <!-- End Page Content -->
