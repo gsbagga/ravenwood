@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/w3/w3data.js"></script>
+</head>
+
+<body>
+	<div w3-include-html="/nav.html"></div>
+	<script>
+	w3IncludeHTML();
+	</script>
+
+	<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+		<h2 class="w3-wide">Parents</h2>
+		<p class="w3-justify">
+		<br>	
+		<div class="w3-container">
+			<h3 class="w3-text-shadow">Volunteering and Fair Share</h3>
+		</div>
+		<br>
+		<div class="w3-container">
+		<p class="w3-justify">
+		<br>
+			Come have some fun and help the kids either during an on-site activity at the school or get an up close experience at a competition. We can use your help!
+
+			Fair Share is the way the band budget is fairly distributed among all band students, so that all of the bands financial obligations can be met.
+
+Marching Band expenses are varied and include:
+<ul>
+  <li class="open">transportation</li>
+  <li class="closed">competition fees</li>
+  <li class="closed">uniform costs</li>
+  <li class="open">equipment</li>
+  <li class="closed">instructors</li>
+  <li class="closed">music and more</li>
+</ul>
+
+
+Concert bands also have expenses, including:
+
+<ul>
+  <li class="open">music</li>
+  <li class="closed">guest instructors</li>
+  <li class="closed">workshops</li>
+</ul>
+
+
+other expenses not paid for by the school district.
+Students are encouraged to participate in the many fundraisers provided throughout the year to help meet the Fair Share obligation.
+
+Participating in band fundraisers can allow you to fundraise 100 percent of your band fees, if you choose. Stay connected with RavenwoodBand.com to find out about the many opportunities to participate! If you have any questions about Fair Share, contact treasurer@ravenwoodband.com and questions about Fundraising should be directed to fundraising@ravenwoodband.com.
+	
+			</p>
+			
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+w3IncludeHTML();
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+<script>
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+
+function myFunc(id) {
+    var x = document.getElementById(id);
+    if (x.classList) { 
+        x.classList.toggle("w3-show");
+    } else {
+    // Fallback for IE9 and earlier
+    if (x.className.indexOf("w3-show") == -1) 
+        x.className = x.className + " w3-show";
+    else 
+        x.className = x.className.replace("w3-show", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
